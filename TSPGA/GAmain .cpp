@@ -118,14 +118,14 @@ void CreateGraph(Graph& G) {
 
 	cout << endl << "【隣接行列】 arcs[max_vexNum][max_vexNum] 如下：" << endl;
 	
-	//for (int i = 0; i < G.vex_num;i++)
-	//{
-	//	for (int j = 0; j < G.vex_num; j++)
-	//	{
-	//		cout << G.arcs[i][j]<<" ";
-	//	}
-	//	cout<<endl;
-	//}
+	for (int i = 0; i < G.vex_num; i++)
+	{
+		for (int j = 0; j < G.vex_num; j++)
+		{
+			cout << G.arcs[i][j] << " ";
+		}
+		cout << endl;
+	}
 	
 }
 

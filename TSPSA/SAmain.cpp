@@ -58,7 +58,6 @@ int main() {
 	Graph G;
 	CreateGraph(G);
 
-    
 	TSP_solution bestSoluion = SA_TSP(G);
 	Display(G, bestSoluion);
 
@@ -81,12 +80,12 @@ void CreateGraph(Graph& G) {
 	}
 
 	read_in >> G.vex_num;
- 	G.arc_num = 0; 
+	G.arc_num = 0;
 	for (int i = 0; i < G.vex_num; i++)
 	{
 		read_in >> G.vexs[i];
 	}
-	G.vexs[G.vex_num] = '\0';	
+	G.vexs[G.vex_num] = '\0';
 
 	for (int i = 0; i < G.vex_num; i++)
 	{
@@ -94,7 +93,7 @@ void CreateGraph(Graph& G) {
 		{
 			read_in >> G.arcs[i][j];
 
- 			if (G.arcs[i][j] > 0)
+			if (G.arcs[i][j] > 0)
 			{
 				G.arc_num++;
 			}
@@ -110,15 +109,18 @@ void CreateGraph(Graph& G) {
 	{
 		cout << G.vexs[i] << " ";
 	}
+
 	cout << endl << "y—×Ús—ñz arcs[max_vexNum][max_vexNum] ”@‰ºF" << endl;
-	//for (int i = 0; i < G.vex_num; i++)
-	//{
-	//	for (int j = 0; j < G.vex_num; j++)
-	//	{
-	//		cout << std::right << setw(4) << G.arcs[i][j] << " ";
-	//	}
-	//	cout << endl;
-	//}
+
+	for (int i = 0; i < G.vex_num; i++)
+	{
+		for (int j = 0; j < G.vex_num; j++)
+		{
+			cout << G.arcs[i][j] << " ";
+		}
+		cout << endl;
+	}
+
 }
 
 TSP_solution SA_TSP(Graph G) {

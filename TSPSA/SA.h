@@ -12,13 +12,13 @@ const int MAX_INT = 999999;
 
 typedef struct {
 	int vex_num, arc_num;					
-	char vexs[max_vexNum];					
-	double arcs[max_vexNum][max_vexNum];	
+	int vexs[MAX_CITYNUM];
+	double arcs[MAX_CITYNUM][MAX_CITYNUM];
 }Graph;
 
 typedef struct {
 	int length_path;
-	char path[max_vexNum];
+	char path[MAX_CITYNUM];
 }TSP_solution;
 
 void CreateGraph(Graph& G);

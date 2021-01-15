@@ -15,12 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GA.h">
+    <ClInclude Include="SA.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="GAmain .cpp">
+    <ClCompile Include="SAmain.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

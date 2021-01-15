@@ -5,7 +5,7 @@
 #define GROUP_NUM 30				// 群体规模
 #define SON_NUM 32					// 产生儿子的个数	SON_NUM = GROUP_NUM + 2
 
-const double P_INHERIATANCE = 0.01;	// 变异概率
+const double P_INHERIATANCE = 0.05;	// 变异概率
 const double P_COPULATION = 0.8;	// 杂交概率
 const int ITERATION_NUM = 1500;		// 遗传次数(迭代次数)
 const double MAX_INT = 9999999.0;
